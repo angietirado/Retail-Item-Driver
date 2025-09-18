@@ -1,0 +1,19 @@
+/**
+ *
+ * @author Angie Tirado
+ */
+public class RetailItemDriver {
+
+    public static void main(String[] args) {
+        
+        RetailItem ri1 = new RetailItem("Jacket", 12, 59.95);
+        RetailItem ri2 = new RetailItem("Designer Jeans", 40, 34.95);
+        RetailItem ri3 = new RetailItem("Shirt", 20, 24.95);
+        
+        System.out.printf("          Description     %s" , "Units On Hand     Price");
+        System.out.printf("\n____________________________________________________");
+        System.out.printf("\nItem #1 %s", "  " +ri1.getDescription() + "          " + ri1.getUnitsOnHand() + "                " + ri1.getPrice());
+        System.out.printf("\nItem #2 %s", "  " +ri2.getDescription() + "  " + ri2.getUnitsOnHand() + "                " + ri2.getPrice());
+        System.out.printf("\nItem #3 %s", "  " +ri3.getDescription() + "           " + ri3.getUnitsOnHand() + "                " + ri3.getPrice());
+    }
+}
